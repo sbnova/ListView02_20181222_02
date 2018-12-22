@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.cyj.listview02_20181222_02.Adapters.StoreAdapter;
 import com.cyj.listview02_20181222_02.datas.Store;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class MainActivity extends BaseActivity {
 
     ListView storeListView;
     List<Store> storeList = new ArrayList<Store>();
+    StoreAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setupValues() {
         fillStores();
+
+        mAdapter = new StoreAdapter(mContext, storeList);
+        storeListView.setAdapter(mAdapter);
 
     }
 
