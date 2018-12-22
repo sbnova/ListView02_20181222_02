@@ -36,6 +36,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/storeNameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="서향"
@@ -43,6 +44,7 @@
                         android:textStyle="bold"
                         android:textSize="18sp"/>
                     <TextView
+                        android:id="@+id/storeAddressTxt"
                         android:layout_marginTop="3dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -56,6 +58,7 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/storeCallBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="전화"/>
@@ -103,6 +106,7 @@
                     android:layout_height="15dp"
                     android:src="@mipmap/ic_launcher"/>
                 <TextView
+                    android:id="@+id/storeOpenTimeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="오전 9:00 ~ 오후 9:00"/>
