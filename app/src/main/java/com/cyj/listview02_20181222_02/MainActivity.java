@@ -4,9 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.cyj.listview02_20181222_02.datas.Store;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends BaseActivity {
 
     ListView storeListView;
+    List<Store> storeList = new ArrayList<Store>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
